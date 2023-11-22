@@ -1,0 +1,39 @@
+const [addSection,setAddSection] = useState(false);
+ 
+ {
+          addSection && (
+            <div className="addcontainer">
+          <form onSubmit={handleSubmit}>
+            <button className='close-btn' onClick={()=>setAddSection(false)}><MdClose/></button>
+            <lable htmlFor="name">Name : </lable>
+            <input type="text" id="name" name="name" />
+
+            <lable htmlFor="email">E-mail : </lable>
+            <input type="email" id="email" name="email" />
+
+            <lable htmlFor="number">Number : </lable>
+            <input type="number" id="number" name="number" />
+
+            <button className="btn-submit">Submit</button>
+          </form>
+        </div>
+          )
+        }
+
+        //table
+
+        <div className="addcontainer">
+          <form onSubmit={handleSubmit}>
+            <button className='close-btn' onClick={()=>setAddSection(false)}><MdClose/></button>
+            <label htmlFor="name">Name : </label>
+            <input type="text" id="name" name="name"   onChange={handleOnChange} />
+
+            <label htmlFor="email">Email : </label>
+            <input type="email" id="email" name="email"   onChange={handleOnChange} />
+
+            <label htmlFor="number">Number : </label>
+            <input type="number" id="number" name="number"   onChange={handleOnChange} />
+
+            <button className="btn-submit">Submit</button>
+          </form>
+        </div>

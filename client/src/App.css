@@ -1,0 +1,98 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.container{
+  width: fit-content;
+  height: 100vh;
+  
+}
+.btn{
+  border: none;
+  padding: 7px 12px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.btn-add{
+  color: #eee;
+  background: darkgreen;
+  font-size: 18px;
+}
+.addcontainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+.addcontainer form{
+  display: flex;
+  flex-direction: column;
+  width: 450px;
+  background: #fff !important;
+  padding: 40px 50px;
+  box-shadow: 5px 6px 7px rgba(0, 0, 0,0.3);
+}
+.addcontainer lable{
+  font-size: 18px;
+  font-weight: 500;
+}
+.addcontainer input{
+  padding: 8px 0;
+  margin: 5px 0px 7px;
+  outline: none;
+  font-size: 16px;
+}
+.btn-submit{
+  /* display: inline-block;
+  width: fit-content; */
+  padding: 10px;
+  background: rgb(202, 39, 39);
+  color: #fff;
+  border: none;
+  font-size: 20px;
+  margin-top: 10px;
+}
+.close-btn{
+  width: fit-content !important;
+  margin-left: auto;
+  display: flex;
+}
+.addTable{
+  margin-top: 10px;
+  border: 1px solid #c9c5c2;
+  box-shadow: 2px 3px 5px rgba(0, 0, 0,0.3);
+  background: #eee;
+}
+.addTable table thead tr{
+  background: rgb(229, 188, 151);
+}
+.addTable table thead tr th,
+.addTable table tbody tr td{
+  min-width: 200px;
+  padding: 5px 0;
+  text-align: center;
+}
+.addTable table tbody tr td{
+  border-bottom: 1px solid #c9c5c2;
+}
+.edit-btn,
+.delete-btn{
+  margin: 5px;
+  font-size: 16px;
+  border-radius: 5px;
+}
+.edit-btn{
+  background: rgb(253, 197, 92);
+}
+.delete-btn{
+  background: rgb(245, 27, 27);
+  color: #eee;
+}
